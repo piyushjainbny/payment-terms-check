@@ -1,0 +1,212 @@
+
+
+/* "East Bay: #424874Moon Raker: #DCD6F7Ghost: #CACFD6" */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+  font-family: 'Advent Pro', sans-serif;
+  background-color: #000000;
+  background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
+  
+  
+  color:#f4f4f4;
+  
+}
+.content p{
+  font-size:25px;
+}
+.nav{
+  padding:15px;
+  position:fixed;
+  top:0;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background-color: #8ee4af;
+  background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
+  
+}
+.nav-items ul{
+  list-style:none;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-evenly
+}
+.logo{
+  color:black;
+  letter-spacing:2px;
+}
+.nav-items ul li{
+  padding:10px;
+  margin:0 10px 0 10px;
+  font-size:16px;
+  color:black;
+}
+.nav-items ul li:hover{
+  text-decoration:underline;
+  cursor:pointer;
+}
+.web{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  margin-top:50px;
+}
+.payment-info{
+  display:flex;
+  flex-direction:column;
+  margin-top:50px;
+  padding:20px;
+  height:100vh;
+}
+.sector-info h2,.sector-info h3,.sector-info h4{
+  color:white;
+  text-decoration:underline;
+  text-decoration-color:#8ee4af;
+  padding:5px;
+  font-weight:150;
+}
+.sector-info{
+  padding:20px;
+  margin:10px;
+  border:1px solid gray;
+  border-radius:5px;
+}
+.sector-info p{
+  font-size:18px
+}
+.content{
+  border-left:1px solid #FF2400;
+    padding:0 20px 0 20px;
+  font-size:35px;
+  width:50vw;
+  margin-left:20px;
+  font-weight:100;
+}
+.details-form{
+  display:flex;
+  flex-directoin:row;
+  justify-content:center;
+  align-items:flex-start;
+ }
+
+.form-column{
+  margin:0 20px 0 20px;
+  padding:10px;
+  
+}
+form{
+  border:1px solid white;
+  border-radius:10px;
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:flex-start;
+  background-color:transparent;
+  
+}
+#submit-button{
+  align-self:flex-end;
+  padding:5px 20px 5px 20px;
+  border-radius:50px;
+  background-color:transparent;
+  border:1px solid #8ee4af;
+  color:#8ee4af;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font-size:16px;
+}
+#submit-button:hover{
+  border:1px solid black;
+  background-color:#8ee4af;
+  cursor:pointer;
+  color:black;
+}
+input{
+  padding:7px 10px 7px 10px;
+   border-radius:5px 5px 0 0; 
+  margin-bottom:20px;
+  margin-top:5px;
+  border:none;
+  border-bottom:2px solid #8ee4af;
+  background-color:  #242124;
+  color:white;
+}
+select{
+  padding:5px;
+  border-radius:5px;
+  margin-bottom:20px;
+  margin-top:5px;
+  background-color: #242124;
+  color:white;
+}
+option{
+  padding:5px;
+}
+.form-column h2{
+  margin-bottom:10px;
+  font-size:20px;
+  font-weight:100;
+}
+select *{
+  color:white;
+  background-color:black;
+  font-size:16px;
+  
+}
+.sp{
+  color:#8ee4af;
+}
+.best-payment-terms h3{
+  margin:20px 0 0 0;
+}
+.best-payent-terms h4{
+  margin:20px 0 0 0;
+  font-weight:150;
+}
+.sector-info p{
+  padding:5px;
+}
+.an{
+  color:#8ee4af;
+}
+.loading{
+  height:100vh;
+  width:100vw;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+@media only screen and (max-width: 768px) {
+  .web{
+    flex-direction:column;
+    height:100%;
+  }
+  .content{
+    width:100%;
+    margin:50px;
+  }
+  form{
+   width:95%;
+    margin:20px;
+  }
+  .details-form{
+    width:100%;
+    flex-direction:column;
+  }
+  input{
+    width:100%;
+  }
+  .nav-items{
+    display:none;
+  }
+}
