@@ -35,7 +35,7 @@ function Form(props) {
     e.preventDefault()
     setLoading(true)
     try {
-      await axios.post('https://paymentbackend.piyushjainbny.repl.co/', data, { withCredentials: true }).then((res) => {
+      await axios.post('https://paymentbackend.netlify.app/', data, { withCredentials: true }).then((res) => {
         setReceivedData(res.data)
         navigate('/details', { state: res.data })
         setLoading(false)
