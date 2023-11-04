@@ -235,6 +235,7 @@ select *{
   display:flex;
   align-items:center;
   justify-content:center;
+  background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
 }
 @media only screen and (max-width: 768px) {
   .web{
