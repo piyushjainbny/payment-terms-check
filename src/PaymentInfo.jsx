@@ -5,7 +5,7 @@ function PaymentInfo() {
 
   const location = useLocation()
   const receivedData = location.state;
-  
+
 
   if (receivedData) {
 
@@ -41,11 +41,11 @@ function PaymentInfo() {
         </div>
         <div className='row'>
           <div className='regulation sector-info'>
-            <h2>Regulations on {receivedData.paymentFromTerms.sector} sector in {receivedData.paymentFromTerms.Country}</h2>
+            <h2>Regulations on {receivedData.paymentFromTerms.sector} sector in {receivedData.paymentFromTerms.Country} (Payer)</h2>
             <p>{receivedData.regulationsFrom ? receivedData.regulationsFrom.regulation : "No regulations"}</p>
           </div>
           <div className='regulation sector-info'>
-            <h2>Regulations on {receivedData.paymentToTerms.sector} sector in {receivedData.paymentToTerms.Country}</h2>
+            <h2>Regulations on {receivedData.paymentToTerms.sector} sector in {receivedData.paymentToTerms.Country} (Payee)</h2>
             <p>{receivedData.regulationsTo ? receivedData.regulationsTo.regulation : 'No regulations'}</p>
           </div>
         </div>
@@ -60,7 +60,7 @@ function PaymentInfo() {
           </div>
           <div className='sector-info'>
             <h2>Penalties</h2>
-            <p style={{color:receivedData.regulationsTo?'red':'black'}}>{receivedData.regulationsTo ? '*Payer have to pay a penalty of ' + receivedData.regulationsTo.penaltyPer + '% to Payee if the payment is delayed by ' + receivedData.regulationsTo.penaltyAfter + ' days.' : 'No penalties will be charged if ' + receivedData.paymentFrom + ' delays the payment based on regulations for ' + receivedData.paymentToTerms.sector + ' in ' + receivedData.paymentToTerms.Country}</p>
+            <p style={{ color: receivedData.regulationsTo ? 'red' : 'black' }}>{receivedData.regulationsTo ? '*Payer have to pay a penalty of ' + receivedData.regulationsTo.penaltyPer + '% to Payee if the payment is delayed by ' + receivedData.regulationsTo.penaltyAfter + ' days.' : 'No penalties will be charged if ' + receivedData.paymentFrom + ' delays the payment based on regulations for ' + receivedData.paymentToTerms.sector + ' in ' + receivedData.paymentToTerms.Country}</p>
           </div>
         </div>
         <div className='footer'>
