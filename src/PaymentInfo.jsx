@@ -7,7 +7,7 @@ function PaymentInfo() {
   const receivedData = location.state;
 
 
-  if (receivedData.paymentFromTerms && receivedData.paymentToTerms && receivedData.regulationsFrom && receivedData.regulationsTo) {
+  if (receivedData.paymentFromTerms && receivedData.paymentToTerms) {
 
     const [data, setData] = useState({
       minDays: Math.floor((receivedData.paymentToTerms.minDays + receivedData.paymentToTerms.maxDays) / 2) - 2,
