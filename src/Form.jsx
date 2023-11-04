@@ -58,7 +58,7 @@ function Form(props) {
         <form onSubmit={onSubmit}>
           <div className='details-form'>
             <div className='form-column'>
-              <h2>Payment from : </h2>
+              <h2><strong>Payment from :</strong> </h2>
               <p>Company Name</p>
               <input type='text' placeholder='Company Name' name='paymentFrom' value={data.paymentFrom} onChange={onChange} required />
               <p>Sector</p>
@@ -81,7 +81,7 @@ function Form(props) {
               <input type='date' name='invoiceDate' value={data.invoiceDate} onChange={onChange} required />
             </div>
             <div className='form-column'>
-              <h2>Payment to : </h2>
+              <h2><strong>Payment to : </strong></h2>
               <p>Company Name</p>
               <input type='text' placeholder='Company Name' name='paymentTo' value={data.paymentTo} onChange={onChange} required />
               <p>Sector</p>
@@ -110,7 +110,7 @@ function Form(props) {
     return (
       <div className='loading'>
         <HashLoader
-          color='#8ee4af'
+          color='#424874'
           loading={loading}
           size={50}
           aria-label="Loading..."
