@@ -247,10 +247,12 @@ select *{
   form{
    width:95%;
     margin:20px;
+
   }
   .details-form{
     width:100%;
     flex-direction:column;
+    padding:10px;
   }
   input{
     width:100%;
