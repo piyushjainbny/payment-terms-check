@@ -237,6 +237,9 @@ select *{
   justify-content:center;
   background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
 }
+.loading h1{
+  text-align:center;
+}
 @media only screen and (max-width: 768px) {
   .web{
     flex-direction:column;
