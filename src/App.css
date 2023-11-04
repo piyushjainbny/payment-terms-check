@@ -95,6 +95,7 @@ body{
   font-weight:bold;
   font-family:'Advent Pro', sans-serif;
   border-bottom:1px solid #DCD6F7;
+  letter-spacing:1px;
 }
 .sector-info{
   padding:20px;
@@ -214,6 +215,7 @@ select *{
 .best-payment-terms h3{
   margin:20px 0 0 0;
 }
+
 .best-payent-terms h4{
   margin:20px 0 0 0;
   font-weight:150;
