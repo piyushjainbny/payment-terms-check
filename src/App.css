@@ -248,13 +248,14 @@ select *{
   form{
    width:95%;
     margin:20px;
-
+padding:20px;
   }
-  .details-form{
-    width:100%;
-    flex-direction:column;
+ 
+  .form-column{
     padding:10px;
+    margin:0;
   }
+  
   input{
     width:100%;
   }
