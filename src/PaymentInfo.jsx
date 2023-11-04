@@ -7,7 +7,7 @@ function PaymentInfo() {
   const receivedData = location.state;
 
 
-  if (receivedData) {
+  if (receivedData.paymentFromTerms && receivedData.paymentToTerms && receivedData.regulationsFrom && receivedData.regulationsTo) {
 
     const [data, setData] = useState({
       minDays: Math.floor((receivedData.paymentToTerms.minDays + receivedData.paymentToTerms.maxDays) / 2) - 2,
@@ -72,7 +72,7 @@ function PaymentInfo() {
   } else {
     return (
       <div className='loading'>
-        <h1>Enter companies details to see details here...</h1>
+        <h1>No Data Found for selected sectors or country</h1>
       </div>
     )
   }

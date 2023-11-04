@@ -70,6 +70,7 @@ function Form(props) {
                 <option value='Iron and Steel'>Iron & Steel</option>
                 <option value='Textiles'>Textiles</option>
                 <option value='Transportation'>Transportation</option>
+                 <option value='Agriculture'>Agriculture</option>
               </select >
               <p>Country</p>
               <select name='paymentFromCountry' onChange={onChange} required>
@@ -77,6 +78,7 @@ function Form(props) {
                 <option value='India'>India</option>
                 <option value='Australia'>Australia</option>
                 <option value='USA'>USA</option>
+                <option value='South Africa'>South Africa</option>
               </select>
               <p>Invoice Date</p>
               <input type='date' name='invoiceDate' value={data.invoiceDate} onChange={onChange} required />
@@ -93,6 +95,7 @@ function Form(props) {
                 <option value='Iron and Steel'>Iron & Steel</option>
                 <option value='Textiles'>Textiles</option>
                 <option value='Transportation'>Transportation</option>
+                <option value='Agriculture'>Agriculture</option>
               </select >
               <p>Country</p>
               <select name='paymentToCountry' onChange={onChange} required>
@@ -100,6 +103,7 @@ function Form(props) {
                 <option value='India'>India</option>
                 <option value='Australia'>Australia</option>
                 <option value='USA'>USA</option>
+                 <option value='South Africa'>South Africa</option>
               </select>
             </div>
           </div>
