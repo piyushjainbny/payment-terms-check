@@ -16,8 +16,19 @@ body{
   color:black;
   
 }
+.row div{
+  width:50%;
+  min-height:30vh;
+}
 .content p{
   font-size:25px;
+}
+.row{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:space-between;
+  padding:5px;
 }
 .nav{
   padding:15px;
@@ -30,6 +41,14 @@ body{
   background-color: #424874;
   background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
   
+}
+.about-button{
+  padding:5px;
+  border:1px solid #424874;
+  border-radius:5px;
+}
+.about-button:hover{
+  cursor:pointer;
 }
 .nav-items ul{
   list-style:none;
@@ -65,8 +84,8 @@ body{
   margin-top:70px;
   /* padding:20px; */
   height:100vh;
-  font-family: 'Roboto', sans-serif;
-  letter-spacing:1px;
+  font-family: 'Poppins', sans-serif;
+  /* letter-spacing:1px; */
 }
 .sector-info h2,.sector-info h3,.sector-info h4{
   color:#424874;
@@ -158,7 +177,7 @@ input{
    border-radius:5px; 
   margin-bottom:20px;
   margin-top:5px;
-  
+  width:100%;
   border:2px solid #424874;
   background-color:  white;
   color:black;
@@ -170,7 +189,8 @@ select{
   margin-top:5px;
   background-color:white;
   color:black;
-  border:2px solid #424874
+  border:2px solid #424874;
+  width:100%;
 }
 option{
   padding:5px;
@@ -197,6 +217,7 @@ select *{
 .best-payent-terms h4{
   margin:20px 0 0 0;
   font-weight:150;
+
 }
 .sector-info p{
   padding:5px;
@@ -234,5 +255,11 @@ select *{
   }
   .nav-items{
     display:none;
+  }
+  .row{
+    flex-direction:column;
+  }
+  .row div{
+    width:100%;
   }
 }

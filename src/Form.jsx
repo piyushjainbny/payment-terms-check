@@ -54,6 +54,7 @@ function Form(props) {
         <div className='content'>
           <h2>Check the Best <span className='sp'>payment</span><br></br>terms through us.</h2>
           <p>Never too early nor too late</p>
+          <button className='about-button'>About Us</button>
         </div>
         <form onSubmit={onSubmit}>
           <div className='details-form'>
