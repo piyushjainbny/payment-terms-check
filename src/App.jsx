@@ -1,22 +1,24 @@
 import React, { useState } from 'react'
 import Navbar from './Navbar'
-import {Route,Routes,BrowserRouter as Router} from 'react-router-dom';
+import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
 import './App.css'
 import Form from './Form'
 import PaymentInfo from './PaymentInfo'
+import Footer from './Footer';
 export default function App() {
-  return(
-    
-   <div>
-     <Navbar/>
-    <Router>
-      
-    <Routes>
-      <Route path='/' element={<Form/>}/>
-      <Route path='/details' element={<PaymentInfo/>}/>
-    </Routes>
+  return (
+
+    <div>
+      <Navbar />
+      <Router>
+
+        <Routes>
+          <Route path='/' element={<Form />} />
+          <Route path='/details' element={<PaymentInfo />} />
+        </Routes>
       </Router>
-     </div>
-      
-  )  
+      <Footer />
+    </div>
+
+  )
 }

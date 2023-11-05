@@ -63,10 +63,7 @@ function PaymentInfo() {
             <p style={{ color: receivedData.regulationsTo ? 'red' : 'black' }}>{receivedData.regulationsTo ? '*Payer have to pay a penalty of ' + receivedData.regulationsTo.penaltyPer + '% to Payee if the payment is delayed by ' + receivedData.regulationsTo.penaltyAfter + ' days.' : 'No penalties will be charged if ' + receivedData.paymentFrom + ' delays the payment based on regulations for ' + receivedData.paymentToTerms.sector + ' in ' + receivedData.paymentToTerms.Country}</p>
           </div>
         </div>
-        <div className='footer'>
-          <h2>Footer of the website</h2>
-          <p>This is a footer of the website</p>
-        </div>
+
       </div>
     )
   } else {
