@@ -2,10 +2,12 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { AiOutlineArrowRight } from 'react-icons/ai';
 import { BsArrowRightCircleFill, BsArrowRightShort } from 'react-icons/bs';
+import { getNames } from 'country-list';
 import HashLoader from "react-spinners/HashLoader";
 import axios from 'axios';
 import PaymentInfo from './PaymentInfo'
 function Form(props) {
+  const countries = getNames()
   const navigate = useNavigate()
   const [details, setDetails] = useState(false)
   const [receivedData, setReceivedData] = useState()
@@ -70,15 +72,15 @@ function Form(props) {
                 <option value='Iron and Steel'>Iron & Steel</option>
                 <option value='Textiles'>Textiles</option>
                 <option value='Transportation'>Transportation</option>
-                 <option value='Agriculture'>Agriculture</option>
+                <option value='Agriculture'>Agriculture</option>
               </select >
               <p>Country</p>
               <select name='paymentFromCountry' onChange={onChange} required>
                 <option value=''>Select</option>
-                <option value='India'>India</option>
-                <option value='Australia'>Australia</option>
-                <option value='USA'>USA</option>
-                <option value='South Africa'>South Africa</option>
+                {countries.map((country)=>{
+                   return(<option key={country} value={country}>{country}</option>)
+                })}
+                
               </select>
               <p>Invoice Date</p>
               <input type='date' name='invoiceDate' value={data.invoiceDate} onChange={onChange} required />
@@ -100,10 +102,10 @@ function Form(props) {
               <p>Country</p>
               <select name='paymentToCountry' onChange={onChange} required>
                 <option value=''>Select</option>
-                <option value='India'>India</option>
-                <option value='Australia'>Australia</option>
-                <option value='USA'>USA</option>
-                 <option value='South Africa'>South Africa</option>
+                
+                {countries.map((country)=>{
+                   return(<option key={country} value={country}>{country}</option>)
+                })}
               </select>
             </div>
           </div>
