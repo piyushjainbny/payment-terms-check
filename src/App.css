@@ -83,8 +83,7 @@ body{
   display:flex;
   flex-direction:column;
   margin-top:70px;
-  padding:20px;
-  height:100vh;
+  /* padding:20px; */
   font-family: 'Poppins', sans-serif;
   /* letter-spacing:1px; */
 }
@@ -100,7 +99,7 @@ body{
 }
 .sector-info{
   padding:20px;
-  
+  margin:10px;
   border:1px solid gray;
   border-radius:5px;
   background-color:seashell;
