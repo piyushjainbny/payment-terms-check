@@ -258,11 +258,15 @@ select *{
     margin:20px;
 padding:20px;
     max-width:100%;
+    box-shadow:0 0 0 0;
+    border:1px solid #474874;
+    border-radius:5px;
   }
  
   .form-column{
     padding:10px;
     margin:0;
+    
   }
   
   input{
