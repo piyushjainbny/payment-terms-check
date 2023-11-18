@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+
 import { useNavigate } from 'react-router-dom';
 import { AiOutlineArrowRight } from 'react-icons/ai';
 import { BsArrowRightCircleFill, BsArrowRightShort } from 'react-icons/bs';
@@ -60,7 +61,9 @@ function Form(props) {
             <p>Never too early nor too late</p>
             <button className='about-button'>About Us</button>
           </div>
+
           <form onSubmit={onSubmit}>
+
             <div className='details-form'>
               <div className='form-column'>
                 <h2><strong>Payment from :</strong> </h2>
@@ -112,7 +115,9 @@ function Form(props) {
               </div>
             </div>
             <button id='submit-button' type='submit'>Check <BsArrowRightShort size={30} /></button>
+
           </form>
+
         </div>
         <About />
       </div>
